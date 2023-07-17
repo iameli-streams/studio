@@ -4,10 +4,10 @@
   "description": "Livepeer Studio API node for controlling streams",
   "version": "0.15.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "src/index.js",
+  "main": "dist/example.js",
+  "module": "src/example.ts",
   "bin": {
-    "livepeer-api": "dist/cli.js"
+    "livepeer-api": "dist/example.js"
   },
   "scripts": {
     "cloud-dev": "npm run docker && kubectl delete pod -l app.kubernetes.io/name=livepeer-api-server --wait && sleep 1 && kubectl logs -f --pod-running-timeout=30s $(kubectl get pods -o name -l app.kubernetes.io/name=livepeer-api-server)",
